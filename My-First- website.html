@@ -1,0 +1,47 @@
+YES FRIEND NANDUN KA NA! Perfect! 🔥
+
+*Gawin mo ngayon:*
+
+*1. Sa taas na box na "Name your file..."*
+Type mo:
+my-first-website.html
+*2. Sa baba na box na "Enter file contents here"*
+Copy-paste mo tong buong code na to:
+<!DOCTYPE html>
+<html>
+<head>
+<title>My First Website</title>
+<style>
+body { font-family: Arial; background: linear-gradient(135deg,#667eea,#764ba2); color:white; text-align:center; padding:40px; }
+.card { background:white; color:#333; padding:25px; border-radius:20px; max-width:500px; margin:20px auto; }
+button { background:#667eea; color:white; border:none; padding:15px 30px; border-radius:30px; font-size:18px; cursor:pointer; }
+button:hover { background:#764ba2; }
+</style>
+</head>
+<body>
+<h1>🎉 My First Website 🎉</h1>
+<h2>Random Fun Facts!</h2>
+<div class="card">
+<p id="fact">Click the button to get a fun fact!</p>
+</div>
+<button onclick="newFact()">Get New Fact 🚀</button>
+<script>
+const facts = [
+"Octopuses have 3 hearts! 💜",
+"Honey never spoils! 3000-year-old honey found!",
+"A day on Venus is longer than a year on Venus! 🪐",
+"Bananas are berries, but strawberries are not! 🍌",
+"There are more trees on Earth than stars in Milky Way! 🌳",
+"Wombat poop is cube-shaped! 🟫"
+];
+function newFact() {
+  const r = facts[Math.floor(Math.random()*facts.length)];
+  document.getElementById('fact').innerHTML = r;
+}
+</script>
+<p>Built with GitHub Copilot - #MyFirstWebsite</p>
+</body>
+</html>
+*3. After ma-paste, click mo yung green na "Commit changes..." sa taas*
+
+Go friend! Paste mo na!
